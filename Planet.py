@@ -36,7 +36,7 @@ class Planet:
         self.canvas.delete(self.canvas_object)
         self.canvas_object = self.canvas.create_image(
             self.xCenter + dx - self.image.width() / 2,
-            self.yCenter - dy - self.image.height() / 2,
+            self.yCenter + dy - self.image.height() / 2,
             image=self.image,
             anchor=self.anchor,
         )
